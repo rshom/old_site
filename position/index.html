@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Get geolocation every second</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+    <h1>Guide Phone to Mark</h1>
+    <h2>Positional Data</h2>
+    <p id="myHeading">Heading: </p>
+
+
+    <h2>Define Target</h2>
+    <form>
+    <p>Distance: <input type="text" name="targetDistance" value="0"> Meters</p>
+    <p>Bearing: <input type="text" name="targetBearing" value="0"> Degrees True</p>
+    <input type="button" value="Update Target" name="targetUpdater" onclick="updateTarget()">
+    <p id="targetLatDisplay">Target LAT: </p>
+    <p id="targetLonDisplay">Target LON: </p>
+    <p id="targetUpdateTime">Updated: </p>
+    </form>
+
+    <h2>Guide to Target</h2>
+    <p id="currentTargetDistance">Distance to Target: </p>
+    <p id="currentTargetBearing">Bearing to Target: </p>
+    <p id="currentRelativeBearing">Relative Bearing to Target: </p>
+    <p id="timeDisplay">Updated: </p>
+
+    <h2>Errors</h2>
+    <div id="errorDisplay"></div>
+
+    <script src="main.js"></script>
+    <script>
+      updateTarget();
+      setInterval(watchPosition, 1000);
+      //watchPosition(); // checks for changes in position. Then updates directions to target
+    </script>
+
+    </body>
+    </html>

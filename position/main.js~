@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Get geolocation every second</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+
+
 // Radius of earth in meters'
 //var R = 6371e3;
 var R = 6371000;// I don't trust math unnecessarily
@@ -5,9 +14,9 @@ var currentLat = 0; // I'll update these inside the postion function
 var currentLon = 0;
 // target must be a global variable, so I can see it
 var target;
-var output;
-var myLat = 0;
-var myLon = 0;
+
+    
+var getCurrentPositionRequest = 0;
 
 //// deg_to_rad
 function deg_to_rad(degs) {
@@ -33,8 +42,8 @@ function find_endpoint(lat,lon,distance,bearing) {
     var lon2 = lon1 + Math.atan2(Math.sin(brng)*Math.sin(d/R)*Math.cos(lat1),
 				 Math.cos(d/R)-Math.sin(lat1)*Math.sin(lat2));
     return {
-	latitude: rad_to_deg(lat2),
-	longitude: rad_to_deg(lon2)
+	lat: rad_to_deg(lat2),
+	lon: rad_to_deg(lon2)
     };
 }
 
@@ -43,10 +52,10 @@ function find_distance(lat1,lon1,lat2,lon2) {
     // performance matters and small distances
     //// test these assumptions
     //// therefore pythagoran's theorem on an equilatoral projection is fine
-    var lat1 = deg_to_rad(lat1)
-    var lat2 = deg_to_rad(lat2)
-    var lon1 = deg_to_rad(lon1)
-    var lon2 = deg_to_rad(lon2)
+    lat1 = deg_to_rad(lat1)
+    lat2 = deg_to_rad(lat2)
+    lon1 = deg_to_rad(lon1)
+    lon2 = deg_to_rad(lon2)
     var x = (lon2-lon1)*Math.cos((lat1+lat2)/2);
     var y = lat2-lat1;
     var distance = Math.sqrt(x*x+y*y)*R; //meters
@@ -110,44 +119,83 @@ function displayCurrentPosition(position) {
     placeholder.innerHTML = "Updated: " + getTime()
 }
 
-function watchPosition() {
-    //var id = getCurrentPositionRequest++;
-    //console.log('watchPosition start - request ' + id);
-    //navigator.geolocation.getCurrentPosition(
-    navigator.geolocation.watchPosition(
+function getCurrentPosition() {
+    var id = getCurrentPositionRequest++;
+    console.log('getCurrentPosition start - request ' + id);
+    navigator.geolocation.getCurrentPosition(
+
 	function(position) {
+	    console.log('getCurrentPosition success - request ' + id);
+	    console.log(position);
+	    displayCurrentPosition(position);
+
+	    // Update position variables
+	    currentLat = position.coords.latitude;
+	    currentLon = position.coords.longitude;
+
 	    // Calculate distance and bearing to target
-	    var targetDistance = find_distance(position.coords.latitude,position.coords.longitude,target.latitude,target.longitude);
-	    var targetBearing = find_bearing(position.coords.latitude,position.coords.longitude,target.latitude,target.longitude);
-	    var relativeBearing = targetBearing - position.coords.heading;
-	    myLat = position.coords.latitude;
-	    myLon = position.coords.longitude;
-	    var myHdg = position.coords.heading;
-	    var placeholder = document.getElementById('myHeading');
-	    placeholder.innerHTML = "Heading: " + myHdg;
-	    var placeholder = document.getElementById('currentTargetDistance');
-	    placeholder.innerHTML = "Distance to Target: " + targetDistance;
 	    
-	    // I don't actually need to target bearing except for calculations
+	    // Display distance and bearing to target
+	},
+
+	function(error) {
+	    console.log('getCurrentPosition error - request ' + id);
+	    console.log(error);
+	    displayError('<div>' + id + ' ' + getTime() + ' ' + error.message + '</div>');
+	},
+
+	{
+	    timeout: 50000 + id,
+	    maximumAge: Infinity,
+	    enableHighAccuracy: true
+	}
+
+    );
+
+}
+
+function watchPosition() {
+    var id = getCurrentPositionRequest++;
+    console.log('watchPosition start - request ' + id);
+    navigator.geolocation.watchPosition(
+
+	function(position) {
+	    //console.log('watchPosition success - request ' + id);
+	    //console.log(position);
+	    //displayCurrentPosition(position);
+
+	    // Update position variables
+	    currentLat = position.coords.latitude;
+	    currentLon = position.coords.longitude;
+
+	    // Calculate distance and bearing to target
+	    var currentTargetDistance = find_distance(currentLat,currentLon,target.lat,target.lon);
+	    var currentTargetBearing = find_bearing(currentLat,currentLon,target.lat,target.lon);
+	    var heading = position.coords.heading;
+	    var relativeBearing = currentTargetBearing - heading;
+	    // this needs to be changed to a reletive bearing
+	    //// maybe, ask what they would rather work with
+	    //// I suspect the pointer should be relitive, but any read out should be true
+	    // Display distance and bearing to target
+	    var placeholder = document.getElementById('currentTargetDistance');
+	    placeholder.innerHTML = "Distance to Target: " + currentTargetDistance;
+	    
 	    var placeholder = document.getElementById('currentTargetBearing');
-	    placeholder.innerHTML = "True Bearing to Target: " + targetBearing;
+	    placeholder.innerHTML = "True Bearing to Target: " + currentTargetBearing;
 
 	    var placeholder = document.getElementById('currentRelativeBearing');
 	    placeholder.innerHTML = "Relative Bearing to Target: " + relativeBearing;
 	    
-	    // update the time
-	    var placeholder = document.getElementById('timeDisplay');
-	    placeholder.innerHTML = "Updated: " + getTime()
 	},
 
 	function(error) {
-	    console.log('watchPosition error - request');
+	    console.log('watchPosition error - request ' + id);
 	    console.log(error);
-	    displayError('<div>'+ getTime() + ' ' + error.message + '</div>');
+	    displayError('<div>' + id + ' ' + getTime() + ' ' + error.message + '</div>');
 	},
 
 	{
-	    timeout: 50000,
+	    timeout: 50000 + id,
 	    maximumAge: Infinity,
 	    enableHighAccuracy: true
 	}
@@ -162,19 +210,53 @@ function updateTarget() {
 
     // calculate target lat and lon
     // current lat and lon are stored as global variables
-    target = find_endpoint(myLat,myLon,targetDistance,targetBearing);
+    target = find_endpoint(currentLat,currentLon,targetDistance,targetBearing);
 
     //display them
     // start with lat
     var placeholder = document.getElementById('targetLatDisplay');
-    placeholder.innerHTML = "LAT: " + target.latitude;
+    placeholder.innerHTML = "LAT: " + target.lat;
     // now lon
     var placeholder = document.getElementById('targetLonDisplay');
-    placeholder.innerHTML = "LON: " + target.longitude;
-    // update the time
-    var placeholder = document.getElementById('targetUpdateTime');
-    placeholder.innerHTML = "Updated: " + getTime()
+    placeholder.innerHTML = "LON: " + target.lon;
 
     
 
 }
+
+
+
+
+//setInterval(getCurrentPosition, 1000);
+watchPosition();
+</script>
+    </head>
+    <body>
+    <h1>Guide Phone to Mark</h1>
+    <h2>Current Position</h2>
+    <p id="latDisplay">LAT: </p>
+    <p id="lonDisplay">LON: </p>
+    <p id="headDisplay">HDG: </p>
+    <p id="speedDisplay">SPD: </p>
+    <p id="timeDisplay">Updated: </p>
+
+
+    <h2>Define Target</h2>
+    <form>
+    <p>Distance: <input type="text" name="targetDistance"> Meters</p>
+    <p>Bearing: <input type="text" name="targetBearing"> Degrees True</p>
+    <input type="button" value="Update Target" name="targetUpdater" onclick="updateTarget()">
+    <p id="targetLatDisplay">Target LAT: </p>
+    <p id="targetLonDisplay">Target LON: </p>
+    </form>
+
+    <h2>Guide to Target</h2>
+    <p id="currentTargetDistance">Distance to Target: </p>
+    <p id="currentTargetBearing">Bearing to Target: </p>
+    <p id="currentRelativeBearing">Relative Bearing to Target: </p>
+
+    <h2>Errors</h2>
+    <div id="errorDisplay"></div>
+
+    </body>
+    </html>

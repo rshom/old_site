@@ -120,8 +120,17 @@ function watchPosition() {
 	    var targetDistance = find_distance(position.coords.latitude,position.coords.longitude,target.latitude,target.longitude);
 	    var targetBearing = find_bearing(position.coords.latitude,position.coords.longitude,target.latitude,target.longitude);
 	    var relativeBearing = targetBearing - position.coords.heading;
+	    // Rotate my image of an arrow
+	    var placeholder = document.getElementById('arrow'); // grab it by ID
+	    var imgRotation = relativeBearing-90; //-90 to put straight
+	    imgRotation = "rotate("+imgRotation+"deg)"; //make it a proper string
+	    placeholder.style.transform = imgRotation; //change it
+
+	    // save these variables as global
 	    myLat = position.coords.latitude;
 	    myLon = position.coords.longitude;
+
+	    // display on screen
 	    var myHdg = position.coords.heading;
 	    var placeholder = document.getElementById('myHeading');
 	    placeholder.innerHTML = "Heading: " + myHdg;

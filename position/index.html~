@@ -4,67 +4,38 @@
     <meta name="viewport" content="width=device-width">
     <title>Get geolocation every second</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script>
-    var getCurrentPositionRequest = 0;
-
-function getTime() {
-    var now = new Date();
-    var time = '' + now.getUTCHours() + ':';
-    if (now.getUTCMinutes() < 10) time += '0';
-    time += now.getUTCMinutes() + ':';
-    if (now.getUTCSeconds() < 10) time += '0';
-    time += now.getUTCSeconds();
-    //time += ':' + now.getUTCMilliseconds();
-    return time;
-}
-
-function formatTime(date) {
-    var time = '' + date.getUTCHours() + ':';
-    if (date.getUTCMinutes() < 10) time += '0';
-    time += date.getUTCMinutes() + ':';
-    if (date.getUTCSeconds() < 10) time += '0';
-    time += date.getUTCSeconds();
-    //time += ':' + date.getUTCMilliseconds();
-    return time;
-}
-
-function display(message) {
-    var div = document.getElementById('consoleDisplay');
-    div.innerHTML = message + div.innerHTML;
-}
-
-function getCurrentPosition() {
-    var id = getCurrentPositionRequest++;
-    console.log('getCurrentPosition start - request ' + id);
-    navigator.geolocation.getCurrentPosition(
-
-	function(position) {
-	    console.log('getCurrentPosition success - request ' + id);
-	    console.log(position);
-	    display('<div>' + id + ' (received: ' + getTime() + ') (timestamp: ' + formatTime(new Date(position.timestamp)) + ') success</div>');
-	},
-
-	function(error) {
-	    console.log('getCurrentPosition error - request ' + id);
-	    console.log(error);
-	    display('<div>' + id + ' ' + getTime() + ' ' + error.message + '</div>');
-	    
-	},
-
-	{
-	    timeout: 5000 + id,
-	    maximumAge: Infinity,
-	    enableHighAccuracy: true
-	}
-
-    );
-
-}
-setInterval(getCurrentPosition, 1000);
-</script>
     </head>
     <body>
-    <h1>Get geolocation every second</h1>
-    <div id="consoleDisplay"></div>
+    <h1>Guide Phone to Mark</h1>
+    <h2>Positional Data</h2>
+    <p id="myHeading">Heading: </p>
+
+
+    <h2>Define Target</h2>
+    <form>
+    <p>Distance: <input type="text" name="targetDistance" value="0"> Meters</p>
+    <p>Bearing: <input type="text" name="targetBearing" value="0"> Degrees True</p>
+    <input type="button" value="Update Target" name="targetUpdater" onclick="updateTarget()">
+    <p id="targetLatDisplay">Target LAT: </p>
+    <p id="targetLonDisplay">Target LON: </p>
+    <p id="targetUpdateTime">Updated: </p>
+    </form>
+
+    <h2>Guide to Target</h2>
+    <p id="currentTargetDistance">Distance to Target: </p>
+    <p id="currentTargetBearing">Bearing to Target: </p>
+    <p id="currentRelativeBearing">Relative Bearing to Target: </p>
+    <p id="timeDisplay">Updated: </p>
+
+    <h2>Errors</h2>
+    <div id="errorDisplay"></div>
+
+    <script src="main.js"></script>
+    <script>
+      updateTarget();
+      //setInterval(watchPosition, 1000);
+      watchPosition(); // checks for changes in position. Then updates directions to target
+    </script>
+
     </body>
     </html>

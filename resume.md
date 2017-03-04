@@ -1,5 +1,6 @@
 # Resume
----
+
+--------------------------------------------
 ## Education
 
 ### Boston University
@@ -10,10 +11,8 @@ _May 2012_ Boston, MA
 **AA in Spanish**
 _April 2013_ Monterey, CA
 
-<!--- Add later
-## Certifications
---->
----
+
+--------------------------------------------
 ## Experience
 
 For more information on my specific duties, [download my full resume](/hire).
@@ -28,7 +27,7 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Led Information Dominance personnel across a variety of military operations
 - Oversaw the work of Cryptologic Technicians, Enlisted Sailors who serve as specialists in cryptology.
 
----
+--------------------------------------------
 ## Technical Skills
 
 ### Software
@@ -59,8 +58,8 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Motor control
 - Sensors
 
----
 
+--------------------------------------------
 ## Professional Skills
 
 ### Project Management

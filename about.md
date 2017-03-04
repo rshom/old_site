@@ -6,4 +6,4 @@ permalink: /about/
 
 I'm Russell Shomberg.
 
-I'm a hacker and entrepreneur.
+I'm a project engineer from Rhode Island.

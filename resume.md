@@ -37,7 +37,7 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 ### CAD
 - SolidWorks EagleCAD AutoCAD
 
-###Programming and Web}
+### Programming and Web
 - MATLAB
 - Python
 - JavaScript

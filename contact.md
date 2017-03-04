@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-Feel free to email me at [contact@russellshomberg.com](email:contact@russellshomberg.com).
+Feel free to email me at [{{site.email}}](email:{{site.email}}).
 
 # Social Media
 {% if site.linkedin_username %}
@@ -18,8 +18,4 @@ Feel free to email me at [contact@russellshomberg.com](email:contact@russellshom
 {% if site.twitter_username %}
 **Twitter:** {{site.twitter_username}}
 {% endif %}
-
-# Resume
-
-My resume is available online, or can be downloaded in PDF, Word, or Plain-text formats.
 

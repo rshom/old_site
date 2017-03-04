@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+        © 2017 Russell Shomberg
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        {% if site.github_username %}
+        {% include icon-github.html username=site.github_username %}
+        {% endif %}
+        {% if site.twitter_username %}
+        {% include icon-twitter.html username=site.twitter_username %}
+        {% endif %}
+	
+	{% if site.linkedin_username %}
+        {% include icon-linkedin.html username=site.linkedin_username %}
+	{% endif %}
+      </section>
+    </div>
+  </div>
+</footer>

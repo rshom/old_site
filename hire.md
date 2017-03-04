@@ -14,14 +14,7 @@ I am always looking for new work. If you are interested in hiring me under contr
 [Download Resume as Plain Text](https://github.com/rshom/Resume/raw/master/resume.pdf)
 -->
 
-## Education
+{% include_relative resume.md %}
 
-## Certifications
-
-## Experience
-
-## Technical Skills
-
-## Professional Skills
 
 

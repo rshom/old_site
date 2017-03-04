@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Now
+title: What I'm Doing Now
 permalink: /now
 ---
 
-(This is a [now](http://www.nownownow.com/about) page, and if you have your own site, [you should make one](http://www.nownownow.com/about), too.)
+**_(This is a [now](http://www.nownownow.com/about) page, and if you have your own site, [you should make one](http://www.nownownow.com/about), too.)_**
 
 I have seperated from the Navy and am currently traveling the world. I have been keeping an Adventure Log as a private Facebook group. Contact me on Facebook, if you want to be invited. While writing this, I am in Cordoba, Spain.
 

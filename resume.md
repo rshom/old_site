@@ -16,17 +16,18 @@ _April 2013_ Monterey, CA
 ---
 ## Experience
 
-For more information on my specific duties, [download my full resume]().
+For more information on my specific duties, [download my full resume](/hire).
 
 ### Cryptologic Warfare Officer
 **Navy Information Operations Command and Other** _2012-2016_ Pearl Harbor, HI
 
 Cryptologic Warfare Officers are directly involved in every aspect of Naval operations – delivering information to decision makers by attacking, defending and exploiting networks to capitalize on vulnerabilities in the information domain.
 
-- Collected, processed, analyzed and reported real-time signal intelligence
-- Planned and delivered information warfare effects during exercises and operations
+- Collected, processed, analyzed and reported real-time signal intelligence.
+- Planned and delivered information warfare effects during exercises and operations.
 - Led Information Dominance personnel across a variety of military operations
-- Oversaw the work of Cryptologic Technicians – Enlisted Sailors who serve as specialists in cryptology
+- Oversaw the work of Cryptologic Technicians, Enlisted Sailors who serve as specialists in cryptology.
+
 ---
 ## Technical Skills
 

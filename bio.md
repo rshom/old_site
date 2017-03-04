@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Russ's Bio
-permalink: /bio
+permalink: /bio/
 ---
 
 Last updated: 04 March 2017

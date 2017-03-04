@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What I'm Doing Now
-permalink: /now
+permalink: /now/
 ---
 
 **_(This is a [now](http://www.nownownow.com/about) page, and if you have your own site, [you should make one](http://www.nownownow.com/about), too.)_**

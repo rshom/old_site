@@ -9,6 +9,7 @@ I am always looking for new work. If you are interested in hiring me under contr
 # Download
 
 [Download Resume as PDF](https://github.com/rshom/Resume/raw/master/resume.pdf)
+
 [Download Resume as Plain Text](https://github.com/rshom/Resume/raw/master/resume.txt)
 <!-- Upload more formats
 [Download Resume as Word Document](https://github.com/rshom/Resume/raw/master/resume.pdf)

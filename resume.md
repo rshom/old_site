@@ -56,9 +56,11 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Circuit Design
 - Soldering
 - Arduino
-- Motor-control
+- Motor control
 - Sensors
+
 ---
+
 ## Professional Skills
 
 ### Project Management

@@ -1,3 +1,5 @@
+# Resume
+---
 ## Education
 
 ### Boston University
@@ -11,13 +13,13 @@ _April 2013_ Monterey, CA
 <!--- Add later
 ## Certifications
 --->
-
+---
 ## Experience
 
 For more information on my specific duties, [download my full resume]().
 
-### Cryptologic Warfare Officer ###
-**Navy Information Operations Command Hawaii and Other Commands** _2012-2016_ Pearl Harbor, HI
+### Cryptologic Warfare Officer
+**Navy Information Operations Command and Other** _2012-2016_ Pearl Harbor, HI
 
 Cryptologic Warfare Officers are directly involved in every aspect of Naval operations – delivering information to decision makers by attacking, defending and exploiting networks to capitalize on vulnerabilities in the information domain.
 
@@ -25,7 +27,7 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Planned and delivered information warfare effects during exercises and operations
 - Led Information Dominance personnel across a variety of military operations
 - Oversaw the work of Cryptologic Technicians – Enlisted Sailors who serve as specialists in cryptology
-
+---
 ## Technical Skills
 
 ### Software
@@ -55,7 +57,7 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Arduino
 - Motor-control
 - Sensors
-
+---
 ## Professional Skills
 
 ### Project Management

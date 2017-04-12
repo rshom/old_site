@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 /security.txt
 *.pem
+s3_website.yml
+*~

@@ -1,23 +1,20 @@
-# Resume
+### Education
 
---------------------------------------------
-## Education
-
-### Boston University
+#### Boston University
 **BS in Mechanical Engineering**
 _May 2012_ Boston, MA
 
-### DoD Language Institute
+#### DoD Language Institute
 **AA in Spanish**
 _April 2013_ Monterey, CA
 
 
 --------------------------------------------
-## Experience
+### Experience
 
 For more information on my specific duties, [download my full resume](/hire).
 
-### Cryptologic Warfare Officer
+#### Cryptologic Warfare Officer
 **Navy Information Operations Command and Other** _2012-2016_ Pearl Harbor, HI
 
 Cryptologic Warfare Officers are directly involved in every aspect of Naval operations – delivering information to decision makers by attacking, defending and exploiting networks to capitalize on vulnerabilities in the information domain.
@@ -28,20 +25,20 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - Oversaw the work of Cryptologic Technicians, Enlisted Sailors who serve as specialists in cryptology.
 
 --------------------------------------------
-## Technical Skills
+### Technical Skills
 
-### Software
+#### Software
 - Excel
 - Word
 - PowerPoint
 - Windows
 
-### CAD
+#### CAD
 - SolidWorks
 - EagleCAD
 - AutoCAD
 
-### Programming and Web
+#### Programming and Web
 - MATLAB
 - Python
 - JavaScript
@@ -51,7 +48,7 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 - HTTP
 - Latex
 
-### Electronics
+#### Electronics
 - Circuit Design
 - Soldering
 - Arduino
@@ -60,16 +57,16 @@ Cryptologic Warfare Officers are directly involved in every aspect of Naval oper
 
 
 --------------------------------------------
-## Professional Skills
+### Professional Skills
 
-### Project Management
+#### Project Management
 - Ran daily planning councils for multiple military commands.
 - Experienced in producing detailed solutions from imprecise directions.
 
-### Teamwork and Leadership
+#### Teamwork and Leadership
 - Regularly integrated into diverse teams of all sizes for various missions. 
 - Acted as operational and administrative leader to countless service men and women.
 
-### Communication
+#### Communication
 - Comfortable speaking to and engaging with groups any size or rank.
 - Experienced in professional writing and slide creation.

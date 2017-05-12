@@ -6,11 +6,11 @@ permalink: /now/
 
 **_(This is a [now](http://www.nownownow.com/about) page, and if you have your own site, [you should make one](http://www.nownownow.com/about), too.)_**
 
-I have seperated from the Navy and am currently traveling the world. I have been keeping an Adventure Log as a private Facebook group. Contact me on Facebook, if you want to be invited. While writing this, I am in Cordoba, Spain.
+I'm living in Newport, RI and temporarily working in CT for [Viking Equipment](http://vikingequip.com) as a project manager.
 
-I am currently applying for work as an engineer. [Click here](/hire) if you are interested in working with me or know someone who may be.
+I am also looking for engineering work. [Click here](/work) if you're interested in working with me.
 
-This update was 04 March 2017.
+This update was 11 May 2017.
 
 
 

@@ -21,11 +21,12 @@ Some information has been left off of this public resume for security reasons. C
 [Download Resume as Plain Text](https://github.com/rshom/Resume/raw/master/resume.txt)
 
 [Download Resume as Word Document](https://github.com/rshom/Resume/raw/master/resume.pdf)
--->
 
 --------------------------------------------
 
 {% include_relative resume.md %}
+-->
+
 
 
 

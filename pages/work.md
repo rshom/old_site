@@ -4,11 +4,9 @@ title: Current Work
 permalink: /work/
 ---
 
-Having completed my transition out of the Navy, I am currently seeking employment as a mechanical engineer. I am a junior engineer, but an seasoned worker and project manager. My training and experiences as a military officer will make me immediately useful to any organization. I am looking for work which will allow me to gain practical engineering experience.
+I am a recently seperated Naval Officer working as a Project Manager for [Viking Equipment](http://vikingequip.com). I am interested in employment oportunities in the engineering or construction industries.
 
-I am currently available employment full-time, part-time, or on contract and am willing to move cities. If you or someone you know may be interested in employing me, please look at my resume below and [contact me](contact). I can be most easily reached at [contact@shomberg.org](mailto:contact@shomberg.org).
-
-I am working as a project manager for [Viking Equipment](http://vikingequip.com) in Connecticut.
+Take a look at my resume or contact me directly at russ@shomberg.org for more information.
 
 ## Resume
 

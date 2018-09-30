@@ -4,8 +4,6 @@ title: Hire Me
 permalink: /hire/
 ---
 
-Having completed my transition out of the Navy, I am currently seeking employment as a mechanical engineer. I am a junior engineer, but an seasoned worker and project manager. My training and experiences as a military officer will make me immediately useful to any organization. I am looking for work which will allow me to gain practical engineering experience.
-
 I am currently available employment full-time, part-time, or on contract and am willing to move cities. If you or someone you know may be interested in employing me, please look at my resume below and [contact me](contact). I can be most easily reached at [contact@shomberg.org](mailto:contact@shomberg.org).
 
 ## Resume

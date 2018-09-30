@@ -1,19 +1,16 @@
 ---
 layout: page
-title: Current Work
+title: Work
 permalink: /work/
 ---
 
-I am a recently seperated Naval Officer working as a Project Manager for [Viking Equipment](http://vikingequip.com). I am interested in employment oportunities in the engineering or construction industries.
+**Status**: Not currently looking for work, but open to part-time research oportunities in Ocean Engineering around Rhode Island.
 
-Take a look at my resume or contact me directly at russ@shomberg.org for more information.
+## Resume and CV
 
-## Resume
-
-Some information has been left off of this public resume for security reasons. Contact me for a more complete copy.
+Download my resume or CV. Both are hosted on [GitHub](https://github.com/rshom) and updated as necessary. Some information is redacted from my public resume for security purposes. [Contact me](/contact) for a more complete version.
 
 [Download Resume as PDF](https://github.com/rshom/Resume/raw/master/shomberg-resume.pdf)
-
 
 <!-- Upload more formats
 [Download Resume as Plain Text](https://github.com/rshom/Resume/raw/master/resume.txt)

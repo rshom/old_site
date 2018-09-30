@@ -7,9 +7,9 @@
 
 # Site settings
 title: Russell Shomberg
-email: contact@shomberg.org
+# email: contact@shomberg.org
 description: > # this means to ignore newlines until "baseurl:"
-   Fill this in later.
+   Personal site of Russell Shomberg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "shomberg.org" # the base hostname & protocol for your site
 twitter_username: 

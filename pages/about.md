@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /
 ---
 
-Welcome, I'm Russ, a mechnical engineer from Rhode Island.
+Current Graduate Student in Ocean Engineering at University of Rhode Island
+ 
+I have a wide ranging interest in fields related to underwater robotics.
 
-I spent five years as a Naval Officer, but have seperated in order to pursue a career in engineering. I'm paticularly interested in civil infrastructure, resource management, and renewable energy.
-
-Currently, I'm seeking employment. Find out more by going to my [hire page](/hire).
-
-Head to my [now page](/now) for more information on what I am up to, or check out my [bio](/bio) to learn about my past.
-
-If you want to get in touch, feel free to use any of the means listed on my [contact page](/contact).
+In my past I was a Project Manager for [Viking Equipment](https://vikingequip.com) and a Cryptology Officer in the U.S. Navy. 

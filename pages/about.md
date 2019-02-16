@@ -4,7 +4,7 @@ title: About
 permalink: /
 ---
 
-Graduate Student in Ocean Engineering at University of Rhode Island with a wide ranging interest in fields related to underwater robotics.
+Graduate Student in Ocean Engineering at University of Rhode Island with a wide ranging interest in fields related to underwater robotics, sensors, and imaging.
 
 ## Research
 

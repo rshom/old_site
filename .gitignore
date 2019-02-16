@@ -2,7 +2,8 @@ _drafts
 _site
 .sass-cache
 .jekyll-metadata
-/security.txt
+security.txt
 *.pem
 s3_website.yml
 *~
+_pages/white-papers

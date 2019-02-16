@@ -1,0 +1,70 @@
+---
+layout: page
+title: The Green Book
+permalink: /white-papers/greenbook
+---
+
+## Overview
+
+The Green Book is a concept from submarines.
+It is a comprehensive list of piece of equipment on the ship that is not functioning 100%.
+
+Listed under each item is:
+
+1. Description of the issue.
+2. Date issue started.
+3. Individual responsible^[If everyone is responsible, no one is responsible] for repair.
+4. Steps taken so far.
+5. Next steps.
+
+Anyone can add an item to the Green Book.
+When an item is added, the Green Book is routed up the Chain of Command to ensure full awareness.
+The status of every single open item is briefed at every single [Daily Ops Brief]().
+
+## Purpose
+
+The Green Book enforces a principle that broken equipment is unacceptable.
+Sometimes broken equipment is urgent and operations must be halted until the issue is resolved.
+For example, you cannot drive with a flat tire.
+You can, however, continue driving once you put the spare tire, or even a doughnut.
+Neither is an acceptable resolution, but people drive around on thier spares all the time.
+The unacceptable state exists because the fix ceases to be urgent.
+
+A daily review of the Green Book reinforces the importance of the unresolved issues.
+Additionaly, it ensures tracking without adding to the anxiety of trying to remember everything.
+Empty Green Books are rare.
+Everyone has equipment that cannot be fixed right away.
+A handful of items being actively worked on is normal.
+
+## Implementation
+
+In simplest form, the Green Book is just a TODO list that can be written on a pad or whiteboard.
+I the tag :greenbook: in Emacs ORG-mode and pull it up as one of the first items in my ORG-agenda.
+The important part is that every equipment issue gets added to it, and it gets viewed everyday.
+If the Green Book works well for groups where issues can easily get ignored such as a company or for roomates.
+In that case it must be accessible to everyone, and items must be assigned ownership.
+
+The first time implimenting a Green Book can be sobering.
+Most people have dozens of significantly broken items and even more minor issues between their:
+
+* Home
+* Vehicle
+* Office
+* Computer/Electronics
+* Sports/Athletic Gear 
+
+Walk around your home/office and write down everything you are reminded of.
+Do not try to fix any of it then.
+Just write it down. 
+
+Now, find some time, and knock off items as aggressively as possible.
+Closing Green Book items is the most therapeutic activity possible when it comes to relieving anxiety.
+It is hard to stop when you are on a roll, but you can rarely close out everything.
+Many items can end up in a waiting for parts or similar state.
+
+Whenever, the Green Book (and therefore the issue list) gets too long, it interferes with operations.
+Take that as a good reason to halt to slow operations.
+Tear into the Green Book until it gets under control.
+
+Note: I have expanded my Green Book to what I call my Bullshit List to also include administrative tasks, information needs, and unexpected urgent tasks.
+

@@ -4,7 +4,7 @@ title: Work
 permalink: /work/
 ---
 
-**Status**: Not currently looking for work, but open to part-time research oportunities in Ocean Engineering around Rhode Island.
+**Status**: Not currently looking for work, but open to part-time oportunities in Ocean Engineering around Rhode Island.
 
 ## Resume and CV
 

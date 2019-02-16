@@ -4,8 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-Feel free to contact me by any of the means below.
-
 {% if site.email %}
 **Email:** [{{site.email}}](email:{{site.email}})
 {% endif %}
